@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2012 Jason Rush and John Flanagan. All rights reserved.
+ * Copyright 2011-2015 Jason Rush and John Flanagan. All rights reserved.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,14 +16,17 @@
  */
 
 #import <Foundation/Foundation.h>
-#include <fcntl.h>
-#import "OutputStream.h"
 
-@interface FileOutputStream : OutputStream {
-    int fd;
-}
+@interface PasswordUtils : NSObject
 
-- (id)initWithFilename:(NSString*)filename flags:(int)flags mode:(mode_t)mode;
-- (off_t)seek:(off_t)offset;
++ (NSData *)generateSaltOfSize:(NSInteger)size;
+
++ (NSString *)hashPassword:(NSString *)password withSalt:(NSData *)salt andRounds:(NSUInteger)rounds andKeySize:(NSInteger)keySize;
++ (NSString *)hashPassword:(NSString *)password;
+
++ (BOOL)validatePassword:(NSString *)password againstHash:(NSString *)hash;
+
++ (NSData *)dataFromHexString:(NSString *)string;
++ (NSString *)hexStringFromData:(NSData *)data;
 
 @end
