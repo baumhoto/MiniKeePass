@@ -167,6 +167,13 @@ enum {
 
     // Track what cells are filled out
     [self updateFilledCells];
+    
+    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.baumhoto.MiniKeePass"];
+    [sharedDefaults setValue:self.entry.username forKey:@"username"];
+    [sharedDefaults setValue:self.entry.password forKey:@"password"];
+    [sharedDefaults setValue:self.entry.url forKey:@"url"];
+    [sharedDefaults synchronize];
+
 }
 
 - (NSArray *)cells {

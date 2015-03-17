@@ -19,7 +19,6 @@
 		52491D0E14D8F3FB00F8CBC8 /* de-itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0914D8F3FB00F8CBC8 /* de-itunes.html */; };
 		52491D0F14D8F3FB00F8CBC8 /* de-keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0A14D8F3FB00F8CBC8 /* de-keyfiles.html */; };
 		52491D1014D8F3FB00F8CBC8 /* de-safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0B14D8F3FB00F8CBC8 /* de-safariemail.html */; };
-		526D9FAD167CDC2E0097213E /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 526D9FAB167CDC010097213E /* libMBProgressHUD.a */; };
 		529708B014FEF149003547FB /* Andale Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529708AD14FEEFD3003547FB /* Andale Mono.ttf */; };
 		52A177BC13EB698E00CEEFCE /* createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 52A177BB13EB698E00CEEFCE /* createdb.html */; };
 		52A512B1159CE7540009F82F /* ImageSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A512B0159CE7540009F82F /* ImageSelectionView.m */; };
@@ -126,6 +125,9 @@
 		68E08316146F2749001C4EDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68E08314146F2749001C4EDF /* InfoPlist.strings */; };
 		68EBC2D61613394D00E8E799 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EBC2D51613394D00E8E799 /* QuartzCore.framework */; };
 		68F19D1F14EB3A9C00B772CB /* CharacterSetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F19D1E14EB3A9C00B772CB /* CharacterSetsViewController.m */; };
+		D2CFD2F81AB70801006E73D4 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CFD2F71AB70801006E73D4 /* libMBProgressHUD.a */; };
+		D2CFD3041AB708EE006E73D4 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFD3031AB708EE006E73D4 /* KeyboardViewController.m */; };
+		D2CFD3071AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2CFD2FE1AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,7 +138,28 @@
 			remoteGlobalIDString = D286A7491518C70F00E13FB8;
 			remoteInfo = MBProgressHUD;
 		};
+		D2CFD3051AB708EE006E73D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689DFFCC13A4273F005EBD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CFD2FD1AB708EE006E73D4;
+			remoteInfo = com.baumhoto.MiniKeepassKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2CFD30B1AB708EE006E73D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2CFD3071AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4E8C168E16B3E871004195A1 /* fr-createdb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fr-createdb.html"; sourceTree = "<group>"; };
@@ -376,6 +399,13 @@
 		BDB0FF5D194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text; name = nl; path = nl.lproj/AppStore.txt; sourceTree = "<group>"; };
 		BDB0FF5E194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BDB0FF5F194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D2CFD2F71AB70801006E73D4 /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = MBProgressHUD/libMBProgressHUD.a; sourceTree = "<group>"; };
+		D2CFD2FE1AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.baumhoto.MiniKeepassKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CFD3011AB708EE006E73D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CFD3021AB708EE006E73D4 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		D2CFD3031AB708EE006E73D4 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		D2CFD30C1AB70BF1006E73D4 /* MiniKeepassKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MiniKeepassKeyboard.entitlements; sourceTree = "<group>"; };
+		D2CFD30D1AB87EA7006E73D4 /* com.baumhoto.MiniKeepassKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = com.baumhoto.MiniKeepassKeyboard.entitlements; path = com.baumhoto.MiniKeepassKeyboard/com.baumhoto.MiniKeepassKeyboard.entitlements; sourceTree = "<group>"; };
 		EFD785BA15B3D02600B9A276 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EFD785BB15B3D03F00B9A276 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -385,7 +415,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526D9FAD167CDC2E0097213E /* libMBProgressHUD.a in Frameworks */,
+				D2CFD2F81AB70801006E73D4 /* libMBProgressHUD.a in Frameworks */,
 				689D000D13A42765005EBD36 /* AudioToolbox.framework in Frameworks */,
 				689DFFDE13A4273F005EBD36 /* CoreGraphics.framework in Frameworks */,
 				689DFFDC13A4273F005EBD36 /* Foundation.framework in Frameworks */,
@@ -395,6 +425,13 @@
 				689DFFDA13A4273F005EBD36 /* UIKit.framework in Frameworks */,
 				689D001113A4277E005EBD36 /* libxml2.dylib in Frameworks */,
 				689D001313A42784005EBD36 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CFD2FB1AB708EE006E73D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +690,7 @@
 		689DFFCA13A4273F005EBD36 = {
 			isa = PBXGroup;
 			children = (
+				D2CFD30D1AB87EA7006E73D4 /* com.baumhoto.MiniKeepassKeyboard.entitlements */,
 				689D030313A42B63005EBD36 /* LICENSE.txt */,
 				689D030413A42B63005EBD36 /* README.md */,
 				689DFFDF13A4273F005EBD36 /* MiniKeePass */,
@@ -660,6 +698,7 @@
 				689D02B013A42B63005EBD36 /* KeePassLib */,
 				689D02F313A42B63005EBD36 /* KissXML */,
 				689D032913A42B63005EBD36 /* Security */,
+				D2CFD2FF1AB708EE006E73D4 /* MiniKeepassKeyboard */,
 				689DFFD813A4273F005EBD36 /* Frameworks */,
 				689D041413A42B85005EBD36 /* Resources */,
 				689DFFD613A4273F005EBD36 /* Products */,
@@ -671,6 +710,7 @@
 			isa = PBXGroup;
 			children = (
 				689DFFD513A4273F005EBD36 /* MiniKeePass.app */,
+				D2CFD2FE1AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -678,6 +718,7 @@
 		689DFFD813A4273F005EBD36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2CFD2F71AB70801006E73D4 /* libMBProgressHUD.a */,
 				6802C36E1A425D7300595AC9 /* LocalAuthentication.framework */,
 				689D000C13A42765005EBD36 /* AudioToolbox.framework */,
 				689DFFDD13A4273F005EBD36 /* CoreGraphics.framework */,
@@ -782,6 +823,26 @@
 			name = "Password Generator";
 			sourceTree = "<group>";
 		};
+		D2CFD2FF1AB708EE006E73D4 /* MiniKeepassKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D2CFD30C1AB70BF1006E73D4 /* MiniKeepassKeyboard.entitlements */,
+				D2CFD3021AB708EE006E73D4 /* KeyboardViewController.h */,
+				D2CFD3031AB708EE006E73D4 /* KeyboardViewController.m */,
+				D2CFD3001AB708EE006E73D4 /* Supporting Files */,
+			);
+			name = MiniKeepassKeyboard;
+			path = com.baumhoto.MiniKeepassKeyboard;
+			sourceTree = "<group>";
+		};
+		D2CFD3001AB708EE006E73D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2CFD3011AB708EE006E73D4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -793,15 +854,34 @@
 				689DFFD213A4273F005EBD36 /* Frameworks */,
 				68C17C9C1A3E1774008DD56B /* Increment Build Number */,
 				689DFFD313A4273F005EBD36 /* Resources */,
+				D2CFD30B1AB708EE006E73D4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D2CFD3061AB708EE006E73D4 /* PBXTargetDependency */,
 			);
 			name = MiniKeePass;
 			productName = MiniKeePass;
 			productReference = 689DFFD513A4273F005EBD36 /* MiniKeePass.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D2CFD2FD1AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CFD3081AB708EE006E73D4 /* Build configuration list for PBXNativeTarget "com.baumhoto.MiniKeepassKeyboard" */;
+			buildPhases = (
+				D2CFD2FA1AB708EE006E73D4 /* Sources */,
+				D2CFD2FB1AB708EE006E73D4 /* Frameworks */,
+				D2CFD2FC1AB708EE006E73D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.baumhoto.MiniKeepassKeyboard;
+			productName = com.baumhoto.MiniKeepassKeyboard;
+			productReference = D2CFD2FE1AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -813,9 +893,21 @@
 				ORGANIZATIONNAME = Self;
 				TargetAttributes = {
 					689DFFD413A4273F005EBD36 = {
-						DevelopmentTeam = G9ZT7943FZ;
+						DevelopmentTeam = JD25SHA7WV;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					D2CFD2FD1AB708EE006E73D4 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = JD25SHA7WV;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
 						};
@@ -850,6 +942,7 @@
 			projectRoot = "";
 			targets = (
 				689DFFD413A4273F005EBD36 /* MiniKeePass */,
+				D2CFD2FD1AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -894,6 +987,13 @@
 				4E8C169516B3E871004195A1 /* fr-itunes.html in Resources */,
 				4E8C169616B3E871004195A1 /* fr-keyfiles.html in Resources */,
 				4E8C169716B3E871004195A1 /* fr-safariemail.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CFD2FC1AB708EE006E73D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1008,7 +1108,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2CFD2FA1AB708EE006E73D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CFD3041AB708EE006E73D4 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2CFD3061AB708EE006E73D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CFD2FD1AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard */;
+			targetProxy = D2CFD3051AB708EE006E73D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		687AAA991889F8B400AB8AC5 /* AppStore.txt */ = {
@@ -1156,6 +1272,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "MiniKeePass/MiniKeePass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MBProgressHUD",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1168,13 +1288,54 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = MiniKeePass/MiniKeePass.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "MiniKeePass/MiniKeePass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MBProgressHUD",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b2580c41-a4ac-4e4b-aa58-5bd5565ef607";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2CFD3091AB708EE006E73D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = com.baumhoto.MiniKeepassKeyboard/com.baumhoto.MiniKeepassKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = com.baumhoto.MiniKeepassKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D2CFD30A1AB708EE006E73D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = com.baumhoto.MiniKeepassKeyboard/com.baumhoto.MiniKeepassKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = com.baumhoto.MiniKeepassKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -1198,6 +1359,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D2CFD3081AB708EE006E73D4 /* Build configuration list for PBXNativeTarget "com.baumhoto.MiniKeepassKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CFD3091AB708EE006E73D4 /* Debug */,
+				D2CFD30A1AB708EE006E73D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
