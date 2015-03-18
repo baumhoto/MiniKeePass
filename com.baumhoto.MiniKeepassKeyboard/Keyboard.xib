@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9Ad-66-mA1" userLabel="KeyboardView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pI6-cW-Hz7" userLabel="Letters - Row 1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                    <subviews>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atM-fc-B9y" userLabel="Username">
+                            <rect key="frame" x="252" y="57" width="95" height="36"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Username">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="userNameKeyPressed:" destination="-1" eventType="touchUpInside" id="vwe-0i-jqN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="atM-fc-B9y" secondAttribute="centerY" id="duK-TK-pjt"/>
+                        <constraint firstAttribute="centerX" secondItem="atM-fc-B9y" secondAttribute="centerX" id="rRI-ZW-TqR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvW-uU-1xP" userLabel="Letters - Row 2">
+                    <rect key="frame" x="0.0" y="150" width="600" height="150"/>
+                    <subviews>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzR-dx-DTJ" userLabel="Password">
+                            <rect key="frame" x="254" y="57" width="92" height="36"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Password">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="passwordKeyPressed:" destination="-1" eventType="touchUpInside" id="djz-NZ-Q7H"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="bzR-dx-DTJ" secondAttribute="centerX" id="jWu-6I-cZr"/>
+                        <constraint firstAttribute="centerY" secondItem="bzR-dx-DTJ" secondAttribute="centerY" id="r4f-VX-lr9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iQ-zg-lWr" userLabel="Letters - Row 3">
+                    <rect key="frame" x="0.0" y="300" width="600" height="150"/>
+                    <subviews>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNR-NF-TDg" userLabel="Url">
+                            <rect key="frame" x="285" y="57" width="30" height="36"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Url">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="urlKeyPressed:" destination="-1" eventType="touchUpInside" id="D5m-RY-yKw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="QNR-NF-TDg" secondAttribute="centerX" id="EDX-oE-7O4"/>
+                        <constraint firstAttribute="centerY" secondItem="QNR-NF-TDg" secondAttribute="centerY" id="qPB-9b-1l0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-ks-ut7" userLabel="Row 4">
+                    <rect key="frame" x="0.0" y="450" width="600" height="150"/>
+                    <subviews>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-ul-qdO" userLabel="globe">
+                            <rect key="frame" x="282.5" y="57.5" width="35" height="35"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="globe">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="globeHL">
+                                <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="globeKeyPressed:" destination="-1" eventType="touchUpInside" id="YRp-c7-OTC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="xSG-ul-qdO" secondAttribute="centerX" id="lWe-5A-mBE"/>
+                        <constraint firstAttribute="centerY" secondItem="xSG-ul-qdO" secondAttribute="centerY" id="soh-K9-cpL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pI6-cW-Hz7" firstAttribute="width" secondItem="9Ad-66-mA1" secondAttribute="width" id="28R-L3-98D"/>
+                <constraint firstItem="cQF-ks-ut7" firstAttribute="top" secondItem="7iQ-zg-lWr" secondAttribute="bottom" id="2Ok-PB-dmO"/>
+                <constraint firstItem="kvW-uU-1xP" firstAttribute="centerX" secondItem="9Ad-66-mA1" secondAttribute="centerX" id="4kS-kx-n5i"/>
+                <constraint firstAttribute="centerX" secondItem="pI6-cW-Hz7" secondAttribute="centerX" id="69A-h7-Xbv"/>
+                <constraint firstItem="kvW-uU-1xP" firstAttribute="top" secondItem="pI6-cW-Hz7" secondAttribute="bottom" id="DTg-e2-iTk"/>
+                <constraint firstItem="cQF-ks-ut7" firstAttribute="width" secondItem="9Ad-66-mA1" secondAttribute="width" id="KEF-Gf-Q50"/>
+                <constraint firstItem="cQF-ks-ut7" firstAttribute="height" secondItem="9Ad-66-mA1" secondAttribute="height" multiplier="0.25" id="KfQ-2I-InI"/>
+                <constraint firstItem="kvW-uU-1xP" firstAttribute="width" secondItem="9Ad-66-mA1" secondAttribute="width" id="LcA-pA-OiO"/>
+                <constraint firstItem="pI6-cW-Hz7" firstAttribute="height" secondItem="9Ad-66-mA1" secondAttribute="height" multiplier="0.25" id="Unp-2f-Vj3"/>
+                <constraint firstItem="7iQ-zg-lWr" firstAttribute="width" secondItem="9Ad-66-mA1" secondAttribute="width" id="WWw-PM-OY2"/>
+                <constraint firstItem="7iQ-zg-lWr" firstAttribute="top" secondItem="kvW-uU-1xP" secondAttribute="bottom" id="bFC-by-9xN"/>
+                <constraint firstItem="kvW-uU-1xP" firstAttribute="height" secondItem="9Ad-66-mA1" secondAttribute="height" multiplier="0.25" id="fs1-sr-ZNa"/>
+                <constraint firstItem="7iQ-zg-lWr" firstAttribute="centerX" secondItem="9Ad-66-mA1" secondAttribute="centerX" id="iJD-RB-B9R"/>
+                <constraint firstItem="7iQ-zg-lWr" firstAttribute="height" secondItem="9Ad-66-mA1" secondAttribute="height" multiplier="0.25" id="imG-Vh-fK6"/>
+                <constraint firstItem="cQF-ks-ut7" firstAttribute="centerX" secondItem="9Ad-66-mA1" secondAttribute="centerX" id="ksz-Rl-JgL"/>
+                <constraint firstItem="pI6-cW-Hz7" firstAttribute="top" secondItem="9Ad-66-mA1" secondAttribute="top" id="xFw-zA-Q4U"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="globe" width="35" height="35"/>
+        <image name="globeHL" width="35" height="35"/>
+    </resources>
+</document>

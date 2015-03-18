@@ -126,6 +126,8 @@
 		68E08310146F24E3001C4EDF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68E0830E146F24E3001C4EDF /* Localizable.strings */; };
 		68E08316146F2749001C4EDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68E08314146F2749001C4EDF /* InfoPlist.strings */; };
 		68EBC2D61613394D00E8E799 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EBC2D51613394D00E8E799 /* QuartzCore.framework */; };
+		D268A8F71AB9CCDE00E477BA /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D268A8F61AB9CCDE00E477BA /* Keyboard.xib */; };
+		D268A8F91AB9DBC400E477BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522D8F9D17E35B0E00BCA329 /* Images.xcassets */; };
 		D2CFD2F81AB70801006E73D4 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CFD2F71AB70801006E73D4 /* libMBProgressHUD.a */; };
 		D2CFD3041AB708EE006E73D4 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFD3031AB708EE006E73D4 /* KeyboardViewController.m */; };
 		D2CFD3071AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2CFD2FE1AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -402,13 +404,14 @@
 		BDB0FF5D194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text; name = nl; path = nl.lproj/AppStore.txt; sourceTree = "<group>"; };
 		BDB0FF5E194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BDB0FF5F194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D268A8F61AB9CCDE00E477BA /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		D268A8F81AB9D5B000E477BA /* com.baumhoto.MiniKeepassKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = com.baumhoto.MiniKeepassKeyboard.entitlements; path = com.baumhoto.MiniKeepassKeyboard/com.baumhoto.MiniKeepassKeyboard.entitlements; sourceTree = "<group>"; };
 		D2CFD2F71AB70801006E73D4 /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = MBProgressHUD/libMBProgressHUD.a; sourceTree = "<group>"; };
 		D2CFD2FE1AB708EE006E73D4 /* com.baumhoto.MiniKeepassKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.baumhoto.MiniKeepassKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CFD3011AB708EE006E73D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2CFD3021AB708EE006E73D4 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		D2CFD3031AB708EE006E73D4 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		D2CFD30C1AB70BF1006E73D4 /* MiniKeepassKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MiniKeepassKeyboard.entitlements; sourceTree = "<group>"; };
-		D2CFD30D1AB87EA7006E73D4 /* com.baumhoto.MiniKeepassKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = com.baumhoto.MiniKeepassKeyboard.entitlements; path = com.baumhoto.MiniKeepassKeyboard/com.baumhoto.MiniKeepassKeyboard.entitlements; sourceTree = "<group>"; };
 		EFD785BA15B3D02600B9A276 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EFD785BB15B3D03F00B9A276 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -653,7 +656,7 @@
 		689DFFCA13A4273F005EBD36 = {
 			isa = PBXGroup;
 			children = (
-				D2CFD30D1AB87EA7006E73D4 /* com.baumhoto.MiniKeepassKeyboard.entitlements */,
+				D268A8F81AB9D5B000E477BA /* com.baumhoto.MiniKeepassKeyboard.entitlements */,
 				689D030313A42B63005EBD36 /* LICENSE.txt */,
 				689D030413A42B63005EBD36 /* README.md */,
 				689DFFDF13A4273F005EBD36 /* MiniKeePass */,
@@ -843,6 +846,7 @@
 				D2CFD3021AB708EE006E73D4 /* KeyboardViewController.h */,
 				D2CFD3031AB708EE006E73D4 /* KeyboardViewController.m */,
 				D2CFD3001AB708EE006E73D4 /* Supporting Files */,
+				D268A8F61AB9CCDE00E477BA /* Keyboard.xib */,
 			);
 			name = MiniKeepassKeyboard;
 			path = com.baumhoto.MiniKeepassKeyboard;
@@ -1007,6 +1011,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D268A8F91AB9DBC400E477BA /* Images.xcassets in Resources */,
+				D268A8F71AB9CCDE00E477BA /* Keyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1281,6 +1287,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = MiniKeePass/MiniKeePass.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "MiniKeePass/MiniKeePass-Info.plist";
@@ -1300,6 +1307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = MiniKeePass/MiniKeePass.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "MiniKeePass/MiniKeePass-Info.plist";
@@ -1331,6 +1339,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1348,6 +1357,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
