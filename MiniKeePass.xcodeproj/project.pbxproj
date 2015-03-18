@@ -128,6 +128,7 @@
 		68EBC2D61613394D00E8E799 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EBC2D51613394D00E8E799 /* QuartzCore.framework */; };
 		D268A8F71AB9CCDE00E477BA /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D268A8F61AB9CCDE00E477BA /* Keyboard.xib */; };
 		D268A8F91AB9DBC400E477BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522D8F9D17E35B0E00BCA329 /* Images.xcassets */; };
+		D268A8FB1ABA122500E477BA /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AFC8CA1AB9F08500E16A7F /* MMWormhole.m */; };
 		D2AFC8C71AB9ED1400E16A7F /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CFD2F71AB70801006E73D4 /* libMBProgressHUD.a */; };
 		D2AFC8CB1AB9F08500E16A7F /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AFC8CA1AB9F08500E16A7F /* MMWormhole.m */; };
 		D2CFD3041AB708EE006E73D4 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFD3031AB708EE006E73D4 /* KeyboardViewController.m */; };
@@ -1146,6 +1147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D268A8FB1ABA122500E477BA /* MMWormhole.m in Sources */,
 				D2CFD3041AB708EE006E73D4 /* KeyboardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

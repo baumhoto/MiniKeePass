@@ -50,6 +50,8 @@ enum {
 
 @property (nonatomic, readonly) NSArray *cells;
 
+@property (nonatomic, readonly) MiniKeePassAppDelegate *appDelegate;
+
 @end
 
 @implementation EntryViewController
@@ -107,6 +109,10 @@ enum {
         _filledCells = [[NSMutableArray alloc] initWithCapacity:4];
 
         _editingStringFields = [NSMutableArray array];
+        
+        // Get the application delegate
+        _appDelegate = [MiniKeePassAppDelegate appDelegate];
+        
     }
     return self;
 }
@@ -168,11 +174,9 @@ enum {
     // Track what cells are filled out
     [self updateFilledCells];
     
-    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.baumhoto.MiniKeePass"];
-    [sharedDefaults setValue:self.entry.username forKey:@"username"];
-    [sharedDefaults setValue:self.entry.password forKey:@"password"];
-    [sharedDefaults setValue:self.entry.url forKey:@"url"];
-    [sharedDefaults synchronize];
+    [_appDelegate sendMessage:@"username" : self.entry.username];
+    [_appDelegate sendMessage:@"password" : self.entry.password];
+    [_appDelegate sendMessage:@"url": self.entry.url];
 
 }
 

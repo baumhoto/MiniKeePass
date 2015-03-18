@@ -23,11 +23,14 @@
 #import "DatabaseManager.h"
 #import "KeychainUtils.h"
 #import "LockScreenManager.h"
+#import "MMWormhole.h"
 
 @interface MiniKeePassAppDelegate ()
 
 @property (nonatomic, strong) FilesViewController *filesViewController;;
 @property (nonatomic, strong) UINavigationController *navigationController;
+
+@property (nonatomic, strong) MMWormhole *wormhole;
 
 @end
 
@@ -53,6 +56,16 @@
                            selector:@selector(handlePasteboardNotification:)
                                name:UIPasteboardChangedNotification
                              object:nil];
+    
+    // Initialize the wormhole
+    self.wormhole = [[MMWormhole alloc] initWithApplicationGroupIdentifier:@"group.baumhoto.MiniKeePass"
+                                                         optionalDirectory:nil];
+    
+    // Become a listener for changes to the wormhole for the button message
+    [self.wormhole listenForMessageWithIdentifier:@"clipboard" listener:^(id messageObject) {
+        // The number is identified with the buttonNumber key in the message object
+        [self handlePasteboardNotification:nil];
+    }];
 
     // Check file protection
     [self checkFileProtection];
@@ -60,6 +73,13 @@
     // Initialize the lock screen manager
     [LockScreenManager sharedInstance];
 
+    return YES;
+}
+
+- (BOOL)sendMessage:(NSString *)messageIdentifier: (NSString *)messageValue {
+    
+    [self.wormhole passMessageObject:@{@"value" : messageValue}
+                          identifier:messageIdentifier];
     return YES;
 }
 
@@ -247,11 +267,48 @@
                 pasteboard.string = @"";
             }
             
+            
             // End the background task
             [application endBackgroundTask:bgTask];
         });
     }
 }
+
+- (void)clearSharedGroup {
+    // Check if the clipboard has any contents
+    
+    AppSettings *appSettings = [AppSettings sharedInstance];
+    
+    // Check if the clearing the clipboard is enabled
+    if ([appSettings clearClipboardEnabled]) {
+        
+        // Get the clear clipboard timeout (in seconds)
+        NSInteger clearClipboardTimeout = [appSettings clearClipboardTimeout];
+        
+        UIApplication *application = [UIApplication sharedApplication];
+        
+        // Initiate a background task
+        __block UIBackgroundTaskIdentifier bgTask;
+        bgTask = [application beginBackgroundTaskWithExpirationHandler:^{
+            // End the background task
+            [application endBackgroundTask:bgTask];
+        }];
+        
+        // Start the long-running task and return immediately.
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            // Sleep until it's time to clean the clipboard
+            [NSThread sleepForTimeInterval:clearClipboardTimeout];
+            
+            [self sendMessage:@"username" : @""];
+            [self sendMessage:@"password" : @""];
+            [self sendMessage:@"url": @""];
+            
+            // End the background task
+            [application endBackgroundTask:bgTask];
+        });
+    }
+}
+
 
 - (void)showSettingsView {
     SettingsViewController *settingsViewController = [[SettingsViewController alloc] initWithStyle:UITableViewStyleGrouped];

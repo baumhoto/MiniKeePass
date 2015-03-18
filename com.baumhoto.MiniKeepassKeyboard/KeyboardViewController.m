@@ -7,10 +7,14 @@
 //
 
 #import "KeyboardViewController.h"
+#import "MMWormhole.h"
 
 @interface KeyboardViewController ()
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *letterButtonsArray;
 @property (nonatomic, strong) UIButton *nextKeyboardButton;
+@property (nonatomic, strong) MMWormhole *wormhole;
+
+
 @end
 
 @implementation KeyboardViewController
@@ -32,31 +36,43 @@
     
     [self setView: mainView];
     
+    // Initialize the wormhole
+    self.wormhole = [[MMWormhole alloc] initWithApplicationGroupIdentifier:@"group.baumhoto.MiniKeePass"
+                                                         optionalDirectory:nil];
 }
 
 - (IBAction) userNameKeyPressed:(id)sender {
-    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.baumhoto.MiniKeePass"];
-    NSString *value = [sharedDefaults stringForKey:@"username"];
+    // Obtain an initial message from the wormhole
+    id messageObject = [self.wormhole messageWithIdentifier:@"username"];
+    NSString *value = [messageObject valueForKey:@"value"];
+    
     if(value != nil)
         [self.textDocumentProxy insertText:value];
     // if user enters username most likely the next will be the password, so copy it to clipboard due to security limitation
-    [self passwordKeyPressed:sender];
+    [self passwordKeyPressed:nil];
 }
 
 - (IBAction)passwordKeyPressed:(UIButton*)sender {
-    // password fields will be most likely be secure fields, so apple keyboard will be used. copy password to clipboard instead
+    id messageObject = [self.wormhole messageWithIdentifier:@"password"];
+    NSString *value = [messageObject valueForKey:@"value"];
     
-    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.baumhoto.MiniKeePass"];
-    NSString *value = [sharedDefaults stringForKey:@"password"];
-    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     if(value != nil)
-         pasteboard.string = value;
+    {
+        // don't insert text when it was not called by button
+        if(sender != nil)
+            [self.textDocumentProxy insertText:value];
+        
+        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+        pasteboard.string = value;
+        [self.wormhole passMessageObject:@{@"value" : @1}
+                              identifier:@"clipboard"];
+    }
 }
 
 - (IBAction)urlKeyPressed:(UIButton*)sender {
     // Get the application delegate
-    NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.baumhoto.MiniKeePass"];
-    NSString *value = [sharedDefaults stringForKey:@"url"];
+    id messageObject = [self.wormhole messageWithIdentifier:@"url"];
+    NSString *value = [messageObject valueForKey:@"value"];
     if(value != nil)
         [self.textDocumentProxy insertText:value];
 }
