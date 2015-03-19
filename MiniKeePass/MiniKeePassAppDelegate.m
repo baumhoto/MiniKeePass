@@ -257,8 +257,24 @@
             [application endBackgroundTask:bgTask];
         }];
         
+        // Avoid a retain cycle
+        __weak UIApplication * weakSelf = self;
+        
         // Start the long-running task and return immediately.
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            
+            NSTimer * timer =
+            [NSTimer timerWithTimeInterval:clearClipboardTimeout
+                                    target:weakSelf
+                                  selector:@selector(timerDidFire:)
+                                  userInfo:nil
+                                   repeats:NO];
+            
+            [[NSRunLoop mainRunLoop] addTimer:timer
+                                      forMode:NSDefaultRunLoopMode];
+            
+            
+            /*
             // Sleep until it's time to clean the clipboard
             [NSThread sleepForTimeInterval:clearClipboardTimeout];
             
@@ -266,13 +282,23 @@
             if (pasteboardVersion == pasteboard.changeCount) {
                 pasteboard.string = @"";
             }
-            
-            
+            */
             // End the background task
             [application endBackgroundTask:bgTask];
         });
     }
 }
+
+- (void) timerDidFire:(NSTimer *)timer
+             {
+             // This method might be called when the application is in the background.
+             // Ensure you do not do anything that will trigger the GPU (e.g. animations)
+             // See: http://developer.apple.com/library/ios/DOCUMENTATION/iPhone/Conceptual/iPhoneOSProgrammingGuide/ManagingYourApplicationsFlow/ManagingYourApplicationsFlow.html#//apple_ref/doc/uid/TP40007072-CH4-SW47
+                 NSLog(@"Timer did fire");
+                 UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+                 pasteboard.string = @"";
+             }
+             
 
 - (void)clearSharedGroup {
     // Check if the clipboard has any contents

@@ -82,6 +82,20 @@
     [self advanceToNextInputMode];
 }
 
+-(IBAction) returnKeyPressed: (UIButton*) sender {
+    
+    [self.textDocumentProxy insertText:@"\n"];
+}
+
+-(IBAction) backspaceKeyPressed: (UIButton*) sender {
+    
+    [self.textDocumentProxy deleteBackward];
+}
+
+-(IBAction) clearClipboardPressed: (UIButton*) sender {
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    pasteboard.string = @"";
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

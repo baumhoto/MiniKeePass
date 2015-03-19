@@ -14,24 +14,28 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pI6-cW-Hz7" userLabel="Letters - Row 1">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                     <subviews>
-                        <button contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atM-fc-B9y" userLabel="Username">
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atM-fc-B9y" userLabel="Username">
                             <rect key="frame" x="252" y="57" width="95" height="36"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <state key="normal" title="Username">
-                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <state key="highlighted">
                                 <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="userNameKeyPressed:" destination="-1" eventType="touchUpInside" id="vwe-0i-jqN"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="centerY" secondItem="atM-fc-B9y" secondAttribute="centerY" id="duK-TK-pjt"/>
                         <constraint firstAttribute="centerX" secondItem="atM-fc-B9y" secondAttribute="centerX" id="rRI-ZW-TqR"/>
@@ -42,10 +46,9 @@
                     <subviews>
                         <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzR-dx-DTJ" userLabel="Password">
                             <rect key="frame" x="254" y="57" width="92" height="36"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <state key="normal" title="Password">
-                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <state key="highlighted">
@@ -56,7 +59,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="centerX" secondItem="bzR-dx-DTJ" secondAttribute="centerX" id="jWu-6I-cZr"/>
                         <constraint firstAttribute="centerY" secondItem="bzR-dx-DTJ" secondAttribute="centerY" id="r4f-VX-lr9"/>
@@ -65,12 +68,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iQ-zg-lWr" userLabel="Letters - Row 3">
                     <rect key="frame" x="0.0" y="300" width="600" height="150"/>
                     <subviews>
-                        <button contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNR-NF-TDg" userLabel="Url">
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNR-NF-TDg" userLabel="Url">
                             <rect key="frame" x="285" y="57" width="30" height="36"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <state key="normal" title="Url">
-                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <state key="highlighted">
@@ -81,7 +84,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="centerX" secondItem="QNR-NF-TDg" secondAttribute="centerX" id="EDX-oE-7O4"/>
                         <constraint firstAttribute="centerY" secondItem="QNR-NF-TDg" secondAttribute="centerY" id="qPB-9b-1l0"/>
@@ -90,8 +93,26 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-ks-ut7" userLabel="Row 4">
                     <rect key="frame" x="0.0" y="450" width="600" height="150"/>
                     <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iU3-mx-GsY" userLabel="return">
+                            <rect key="frame" x="370" y="57" width="35" height="35"/>
+                            <state key="normal" image="return">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="returnKeyPressed:" destination="-1" eventType="touchUpInside" id="IjE-5d-b3C"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8t-22-KIk" userLabel="backspace">
+                            <rect key="frame" x="413" y="57" width="35" height="35"/>
+                            <state key="normal" image="backspace">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backspaceKeyPressed:" destination="-1" eventType="touchUpInside" id="DRD-ZA-5Bh"/>
+                            </connections>
+                        </button>
                         <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-ul-qdO" userLabel="globe">
-                            <rect key="frame" x="282.5" y="57.5" width="35" height="35"/>
+                            <rect key="frame" x="175" y="57" width="35" height="35"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                             <state key="normal" image="globe">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,36 +125,57 @@
                                 <action selector="globeKeyPressed:" destination="-1" eventType="touchUpInside" id="YRp-c7-OTC"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCC-j9-GAT" userLabel="clearClipboard">
+                            <rect key="frame" x="218" y="57" width="144" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Clear Clipboard">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clearClipboardPressed:" destination="-1" eventType="touchUpInside" id="rcZ-Te-YBv"/>
+                            </connections>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="centerX" secondItem="xSG-ul-qdO" secondAttribute="centerX" id="lWe-5A-mBE"/>
-                        <constraint firstAttribute="centerY" secondItem="xSG-ul-qdO" secondAttribute="centerY" id="soh-K9-cpL"/>
+                        <constraint firstItem="xSG-ul-qdO" firstAttribute="top" secondItem="UCC-j9-GAT" secondAttribute="top" id="0or-vF-imZ"/>
+                        <constraint firstItem="UCC-j9-GAT" firstAttribute="leading" secondItem="xSG-ul-qdO" secondAttribute="trailing" constant="8" symbolic="YES" id="Akl-Wa-p5g"/>
+                        <constraint firstItem="iU3-mx-GsY" firstAttribute="top" secondItem="UCC-j9-GAT" secondAttribute="top" id="DJ9-il-zZn"/>
+                        <constraint firstItem="L8t-22-KIk" firstAttribute="leading" secondItem="iU3-mx-GsY" secondAttribute="trailing" constant="8" symbolic="YES" id="MjE-zq-a5n"/>
+                        <constraint firstItem="UCC-j9-GAT" firstAttribute="centerX" secondItem="cQF-ks-ut7" secondAttribute="centerX" constant="-10" id="R6c-DV-MHo"/>
+                        <constraint firstItem="iU3-mx-GsY" firstAttribute="top" secondItem="L8t-22-KIk" secondAttribute="top" id="b33-fD-BZc"/>
+                        <constraint firstItem="iU3-mx-GsY" firstAttribute="leading" secondItem="UCC-j9-GAT" secondAttribute="trailing" constant="8" symbolic="YES" id="fNq-im-VQM"/>
+                        <constraint firstItem="UCC-j9-GAT" firstAttribute="centerY" secondItem="cQF-ks-ut7" secondAttribute="centerY" id="w1P-9h-Wod"/>
                     </constraints>
                 </view>
             </subviews>
             <constraints>
                 <constraint firstItem="pI6-cW-Hz7" firstAttribute="width" secondItem="9Ad-66-mA1" secondAttribute="width" id="28R-L3-98D"/>
-                <constraint firstItem="cQF-ks-ut7" firstAttribute="top" secondItem="7iQ-zg-lWr" secondAttribute="bottom" id="2Ok-PB-dmO"/>
                 <constraint firstItem="kvW-uU-1xP" firstAttribute="centerX" secondItem="9Ad-66-mA1" secondAttribute="centerX" id="4kS-kx-n5i"/>
                 <constraint firstAttribute="centerX" secondItem="pI6-cW-Hz7" secondAttribute="centerX" id="69A-h7-Xbv"/>
                 <constraint firstItem="kvW-uU-1xP" firstAttribute="top" secondItem="pI6-cW-Hz7" secondAttribute="bottom" id="DTg-e2-iTk"/>
-                <constraint firstItem="cQF-ks-ut7" firstAttribute="width" secondItem="9Ad-66-mA1" secondAttribute="width" id="KEF-Gf-Q50"/>
-                <constraint firstItem="cQF-ks-ut7" firstAttribute="height" secondItem="9Ad-66-mA1" secondAttribute="height" multiplier="0.25" id="KfQ-2I-InI"/>
+                <constraint firstItem="cQF-ks-ut7" firstAttribute="leading" secondItem="7iQ-zg-lWr" secondAttribute="leading" id="FCC-Vr-wfH"/>
                 <constraint firstItem="kvW-uU-1xP" firstAttribute="width" secondItem="9Ad-66-mA1" secondAttribute="width" id="LcA-pA-OiO"/>
+                <constraint firstItem="cQF-ks-ut7" firstAttribute="trailing" secondItem="7iQ-zg-lWr" secondAttribute="trailing" id="SWA-dC-2no"/>
+                <constraint firstAttribute="bottom" secondItem="cQF-ks-ut7" secondAttribute="bottom" id="Sh5-TH-hyW"/>
                 <constraint firstItem="pI6-cW-Hz7" firstAttribute="height" secondItem="9Ad-66-mA1" secondAttribute="height" multiplier="0.25" id="Unp-2f-Vj3"/>
                 <constraint firstItem="7iQ-zg-lWr" firstAttribute="width" secondItem="9Ad-66-mA1" secondAttribute="width" id="WWw-PM-OY2"/>
                 <constraint firstItem="7iQ-zg-lWr" firstAttribute="top" secondItem="kvW-uU-1xP" secondAttribute="bottom" id="bFC-by-9xN"/>
+                <constraint firstItem="cQF-ks-ut7" firstAttribute="top" secondItem="7iQ-zg-lWr" secondAttribute="bottom" id="cpy-AS-hHm"/>
                 <constraint firstItem="kvW-uU-1xP" firstAttribute="height" secondItem="9Ad-66-mA1" secondAttribute="height" multiplier="0.25" id="fs1-sr-ZNa"/>
                 <constraint firstItem="7iQ-zg-lWr" firstAttribute="centerX" secondItem="9Ad-66-mA1" secondAttribute="centerX" id="iJD-RB-B9R"/>
                 <constraint firstItem="7iQ-zg-lWr" firstAttribute="height" secondItem="9Ad-66-mA1" secondAttribute="height" multiplier="0.25" id="imG-Vh-fK6"/>
-                <constraint firstItem="cQF-ks-ut7" firstAttribute="centerX" secondItem="9Ad-66-mA1" secondAttribute="centerX" id="ksz-Rl-JgL"/>
                 <constraint firstItem="pI6-cW-Hz7" firstAttribute="top" secondItem="9Ad-66-mA1" secondAttribute="top" id="xFw-zA-Q4U"/>
             </constraints>
+            <point key="canvasLocation" x="466" y="575"/>
         </view>
     </objects>
     <resources>
+        <image name="backspace" width="35" height="35"/>
         <image name="globe" width="35" height="35"/>
         <image name="globeHL" width="35" height="35"/>
+        <image name="return" width="35" height="35"/>
     </resources>
 </document>
