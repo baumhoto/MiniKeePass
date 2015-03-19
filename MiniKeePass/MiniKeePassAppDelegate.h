@@ -35,6 +35,8 @@
 
 - (void)showSettingsView;
 - (void)dismissSettingsView;
+
 - (BOOL)sendMessage:(NSString *)messageIdentifier: (NSString *)messageValue;
+- (id)getMessage:(NSString *)messageIdentifier;
 
 @end

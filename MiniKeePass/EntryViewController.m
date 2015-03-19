@@ -156,6 +156,8 @@ enum {
     [passwordCell.textField resignFirstResponder];
     [urlCell.textField resignFirstResponder];
     [commentsCell.textView resignFirstResponder];
+    
+    [self setActiveEntryForKeyboard];
 }
 
 - (void)setEntry:(KdbEntry *)e {
@@ -171,13 +173,23 @@ enum {
     urlCell.textField.text = self.entry.url;
     commentsCell.textView.text = self.entry.notes;
 
+    [self setActiveEntryForKeyboard];
+    
     // Track what cells are filled out
     [self updateFilledCells];
-    
-    [_appDelegate sendMessage:@"username" : self.entry.username];
-    [_appDelegate sendMessage:@"password" : self.entry.password];
-    [_appDelegate sendMessage:@"url": self.entry.url];
 
+}
+
+- (void)setActiveEntryForKeyboard {
+    id messageObject = [_appDelegate getMessage:@"title"];
+    NSString *value = [messageObject valueForKey:@"value"];
+    if(![value isEqualToString:self.entry.title])
+    {
+        [_appDelegate sendMessage:@"title" :self.entry.title];
+        [_appDelegate sendMessage:@"username" : self.entry.username];
+        [_appDelegate sendMessage:@"password" : self.entry.password];
+        [_appDelegate sendMessage:@"url": self.entry.url];
+    }
 }
 
 - (NSArray *)cells {

@@ -83,6 +83,11 @@
     return YES;
 }
 
+- (id)getMessage:(NSString *)messageIdentifier {
+    return [self.wormhole messageWithIdentifier:messageIdentifier];
+}
+
+
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Check file protection
     [self checkFileProtection];
