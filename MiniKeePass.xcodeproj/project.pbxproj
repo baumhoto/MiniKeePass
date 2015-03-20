@@ -415,7 +415,6 @@
 		D2CFD3011AB708EE006E73D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2CFD3021AB708EE006E73D4 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		D2CFD3031AB708EE006E73D4 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
-		D2CFD30C1AB70BF1006E73D4 /* MiniKeepassKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MiniKeepassKeyboard.entitlements; sourceTree = "<group>"; };
 		EFD785BA15B3D02600B9A276 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EFD785BB15B3D03F00B9A276 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -856,7 +855,6 @@
 		D2CFD2FF1AB708EE006E73D4 /* MiniKeepassKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				D2CFD30C1AB70BF1006E73D4 /* MiniKeepassKeyboard.entitlements */,
 				D2CFD3021AB708EE006E73D4 /* KeyboardViewController.h */,
 				D2CFD3031AB708EE006E73D4 /* KeyboardViewController.m */,
 				D2CFD3001AB708EE006E73D4 /* Supporting Files */,

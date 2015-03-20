@@ -11,7 +11,10 @@
 
 @interface KeyboardViewController ()
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *letterButtonsArray;
-@property (nonatomic, strong) UIButton *nextKeyboardButton;
+@property (weak, nonatomic) IBOutlet UIButton *userNameButton;
+@property (weak, nonatomic) IBOutlet UIButton *passwordButton;
+@property (weak, nonatomic) IBOutlet UIButton *urlButton;
+
 @property (nonatomic, strong) MMWormhole *wormhole;
 
 
@@ -28,17 +31,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
     NSArray* nibViews = [[NSBundle mainBundle] loadNibNamed:@"Keyboard"
                                                       owner:self
                                                     options:nil];
     
     UIView* mainView = (UIView*)[nibViews objectAtIndex:0];
-    
     [self setView: mainView];
     
     // Initialize the wormhole
     self.wormhole = [[MMWormhole alloc] initWithApplicationGroupIdentifier:@"group.baumhoto.MiniKeePass"
                                                          optionalDirectory:nil];
+    
+    // setup double-taps
+    UITapGestureRecognizer *userNameDoubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(userNameDoubleTapped:)];
+    userNameDoubleTap.numberOfTapsRequired = 2;
+    [self.userNameButton addGestureRecognizer:userNameDoubleTap];
+    
+    UITapGestureRecognizer *passwordDoubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(passwordDoubleTapped:)];
+    passwordDoubleTap.numberOfTapsRequired = 2;
+    [self.passwordButton addGestureRecognizer:passwordDoubleTap];
+    
+    UITapGestureRecognizer *urlDoubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(urlDoubleTapped:)];
+    urlDoubleTap.numberOfTapsRequired = 2;
+    [self.urlButton addGestureRecognizer:urlDoubleTap];
+    
 }
 
 - (IBAction) userNameKeyPressed:(id)sender {
@@ -47,9 +65,23 @@
     NSString *value = [messageObject valueForKey:@"value"];
     
     if(value != nil)
+    {
         [self.textDocumentProxy insertText:value];
-    // if user enters username most likely the next will be the password, so copy it to clipboard due to security limitation
-    [self passwordKeyPressed:nil];
+        // if user enters username most likely the next will be the password, so copy it to clipboard due to security limitation
+        [self passwordDoubleTapped:nil];
+    }
+}
+
+-(void) userNameDoubleTapped: (UIButton*) sender {
+    
+    id messageObject = [self.wormhole messageWithIdentifier:@"username"];
+    NSString *value = [messageObject valueForKey:@"value"];
+    
+    if(value != nil)
+    {
+        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+        pasteboard.string = value;
+    }
 }
 
 - (IBAction)passwordKeyPressed:(UIButton*)sender {
@@ -58,12 +90,24 @@
     
     if(value != nil)
     {
-        // don't insert text when it was not called by button
-        if(sender != nil)
-            [self.textDocumentProxy insertText:value];
+        [self.textDocumentProxy insertText:value];
         
+    }
+}
+
+-(void) passwordDoubleTapped: (UIButton*) sender {
+    
+    id messageObject = [self.wormhole messageWithIdentifier:@"password"];
+    NSString *value = [messageObject valueForKey:@"value"];
+    
+    if(value != nil)
+    {
         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
         pasteboard.string = value;
+        
+        // MiniKeePassAppDelegat listens to clipboard messages
+        // if clearClipboard is enabled in settings the background-thread clearing
+        // clipboard after specfied amount of time runs
         [self.wormhole passMessageObject:@{@"value" : @1}
                               identifier:@"clipboard"];
     }
@@ -75,6 +119,18 @@
     NSString *value = [messageObject valueForKey:@"value"];
     if(value != nil)
         [self.textDocumentProxy insertText:value];
+}
+
+-(void) urlDoubleTapped: (UIButton*) sender {
+    
+    id messageObject = [self.wormhole messageWithIdentifier:@"url"];
+    NSString *value = [messageObject valueForKey:@"value"];
+    
+    if(value != nil)
+    {
+        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+        pasteboard.string = value;
+    }
 }
 
 - (IBAction) globeKeyPressed:(id)sender {
