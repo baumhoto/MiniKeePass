@@ -127,6 +127,126 @@
 		68E08310146F24E3001C4EDF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68E0830E146F24E3001C4EDF /* Localizable.strings */; };
 		68E08316146F2749001C4EDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68E08314146F2749001C4EDF /* InfoPlist.strings */; };
 		68EBC2D61613394D00E8E799 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EBC2D51613394D00E8E799 /* QuartzCore.framework */; };
+		D2057B8C1C79ADB800D4AB44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 689DFFE613A4273F005EBD36 /* main.m */; };
+		D2057B8D1C79ADB800D4AB44 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02B813A42B63005EBD36 /* Base64.m */; };
+		D2057B8E1C79ADB800D4AB44 /* KeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE751AB27228005CB6BD /* KeychainUtils.m */; };
+		D2057B8F1C79ADB800D4AB44 /* PinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE631AB271C6005CB6BD /* PinViewController.m */; };
+		D2057B901C79ADB800D4AB44 /* GroupSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C7FD7C18693D9900D498A2 /* GroupSearchController.m */; };
+		D2057B911C79ADB800D4AB44 /* PasswordFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE831AB27283005CB6BD /* PasswordFieldCell.m */; };
+		D2057B921C79ADB800D4AB44 /* Kdb.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02C813A42B63005EBD36 /* Kdb.m */; };
+		D2057B931C79ADB800D4AB44 /* LockScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE5F1AB271C6005CB6BD /* LockScreenManager.m */; };
+		D2057B941C79ADB800D4AB44 /* CharacterSetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE6B1AB2720D005CB6BD /* CharacterSetsViewController.m */; };
+		D2057B951C79ADB800D4AB44 /* Kdb3Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02CA13A42B63005EBD36 /* Kdb3Date.m */; };
+		D2057B961C79ADB800D4AB44 /* Kdb3Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02CC13A42B63005EBD36 /* Kdb3Node.m */; };
+		D2057B971C79ADB800D4AB44 /* Kdb3Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02D213A42B63005EBD36 /* Kdb3Reader.m */; };
+		D2057B981C79ADB800D4AB44 /* Kdb3Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02D413A42B63005EBD36 /* Kdb3Writer.m */; };
+		D2057B991C79ADB800D4AB44 /* PasswordGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE6F1AB2720D005CB6BD /* PasswordGeneratorViewController.m */; };
+		D2057B9A1C79ADB800D4AB44 /* ChoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE7D1AB27283005CB6BD /* ChoiceCell.m */; };
+		D2057B9B1C79ADB800D4AB44 /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE851AB27283005CB6BD /* SwitchCell.m */; };
+		D2057B9C1C79ADB800D4AB44 /* Kdb4Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02D613A42B63005EBD36 /* Kdb4Node.m */; };
+		D2057B9D1C79ADB800D4AB44 /* Kdb4Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02D813A42B63005EBD36 /* Kdb4Parser.m */; };
+		D2057B9E1C79ADB800D4AB44 /* Kdb4Persist.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02DA13A42B63005EBD36 /* Kdb4Persist.m */; };
+		D2057B9F1C79ADB800D4AB44 /* Kdb4Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02DC13A42B63005EBD36 /* Kdb4Reader.m */; };
+		D2057BA01C79ADB800D4AB44 /* Kdb4Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02DE13A42B63005EBD36 /* Kdb4Writer.m */; };
+		D2057BA11C79ADB800D4AB44 /* KdbPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02E113A42B63005EBD36 /* KdbPassword.m */; };
+		D2057BA21C79ADB800D4AB44 /* KdbReaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02E413A42B63005EBD36 /* KdbReaderFactory.m */; };
+		D2057BA31C79ADB800D4AB44 /* ImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE981AB272BD005CB6BD /* ImageFactory.m */; };
+		D2057BA41C79ADB800D4AB44 /* SelectGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6837C35F188C9ED30018D588 /* SelectGroupViewController.m */; };
+		D2057BA51C79ADB800D4AB44 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE611AB271C6005CB6BD /* LockViewController.m */; };
+		D2057BA61C79ADB800D4AB44 /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 68496E721AB34F8800370876 /* AppSettings.m */; };
+		D2057BA71C79ADB800D4AB44 /* KdbWriterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02E713A42B63005EBD36 /* KdbWriterFactory.m */; };
+		D2057BA81C79ADB800D4AB44 /* Salsa20RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02EC13A42B63005EBD36 /* Salsa20RandomStream.m */; };
+		D2057BA91C79ADB800D4AB44 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02F013A42B63005EBD36 /* Utils.m */; };
+		D2057BAA1C79ADB800D4AB44 /* UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02F213A42B63005EBD36 /* UUID.m */; };
+		D2057BAB1C79ADB800D4AB44 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02F613A42B63005EBD36 /* DDXMLElementAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D2057BAC1C79ADB800D4AB44 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02F913A42B63005EBD36 /* NSString+DDXML.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D2057BAD1C79ADB800D4AB44 /* UIAlertViewAutoDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = 682B938D18A48EC20020C22A /* UIAlertViewAutoDismiss.m */; };
+		D2057BAE1C79ADB800D4AB44 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02FC13A42B63005EBD36 /* DDXMLDocument.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D2057BAF1C79ADB800D4AB44 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02FE13A42B63005EBD36 /* DDXMLElement.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D2057BB01C79ADB800D4AB44 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D030013A42B63005EBD36 /* DDXMLNode.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D2057BB11C79ADB800D4AB44 /* DatabaseDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D042713A42C81005EBD36 /* DatabaseDocument.m */; };
+		D2057BB21C79ADB800D4AB44 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D042913A42C81005EBD36 /* DatabaseManager.m */; };
+		D2057BB31C79ADB800D4AB44 /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D042B13A42C81005EBD36 /* EntryViewController.m */; };
+		D2057BB41C79ADB800D4AB44 /* FilesInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D042D13A42C81005EBD36 /* FilesInfoView.m */; };
+		D2057BB51C79ADB800D4AB44 /* FilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D042F13A42C81005EBD36 /* FilesViewController.m */; };
+		D2057BB61C79ADB800D4AB44 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D043113A42C81005EBD36 /* GroupViewController.m */; };
+		D2057BB71C79ADB800D4AB44 /* MiniKeePassAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D043313A42C81005EBD36 /* MiniKeePassAppDelegate.m */; };
+		D2057BB81C79ADB800D4AB44 /* NewKdbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D043513A42C81005EBD36 /* NewKdbViewController.m */; };
+		D2057BB91C79ADB800D4AB44 /* SelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D043F13A42C82005EBD36 /* SelectionListViewController.m */; };
+		D2057BBA1C79ADB800D4AB44 /* TextEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D044513A42C82005EBD36 /* TextEntryController.m */; };
+		D2057BBB1C79ADB800D4AB44 /* PasswordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE771AB27228005CB6BD /* PasswordUtils.m */; };
+		D2057BBC1C79ADB800D4AB44 /* InfoBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 68915A0A13A6F6C200A408B0 /* InfoBar.m */; };
+		D2057BBD1C79ADB800D4AB44 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A3E1AE13A8C9D1006881CA /* FormViewController.m */; };
+		D2057BBE1C79ADB800D4AB44 /* ImageSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6876F67713B2D8F400A05C7A /* ImageSelectionViewController.m */; };
+		D2057BBF1C79ADB800D4AB44 /* KeypadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE5B1AB271C6005CB6BD /* KeypadButton.m */; };
+		D2057BC01C79ADB800D4AB44 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D7564C186E4D8A001AFB82 /* WebViewController.m */; };
+		D2057BC11C79ADB800D4AB44 /* PasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D991E513F3EAAE00F6ED1F /* PasswordViewController.m */; };
+		D2057BC21C79ADB800D4AB44 /* RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 689A4D1214046B8200AA897D /* RandomStream.m */; };
+		D2057BC31C79ADB800D4AB44 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CE37F114049BC900E4A5E1 /* HelpViewController.m */; };
+		D2057BC41C79ADB800D4AB44 /* ImageSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A512B0159CE7540009F82F /* ImageSelectionView.m */; };
+		D2057BC51C79ADB800D4AB44 /* AesInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44F21603883900156830 /* AesInputStream.m */; };
+		D2057BC61C79ADB800D4AB44 /* AesOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44F41603883900156830 /* AesOutputStream.m */; };
+		D2057BC71C79ADB800D4AB44 /* Arc4RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44F61603883900156830 /* Arc4RandomStream.m */; };
+		D2057BC81C79ADB800D4AB44 /* DataInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44F81603883900156830 /* DataInputStream.m */; };
+		D2057BC91C79ADB800D4AB44 /* DataOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44FA1603883900156830 /* DataOutputStream.m */; };
+		D2057BCA1C79ADB800D4AB44 /* FileInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44FC1603883900156830 /* FileInputStream.m */; };
+		D2057BCB1C79ADB800D4AB44 /* FileOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44FE1603883900156830 /* FileOutputStream.m */; };
+		D2057BCC1C79ADB800D4AB44 /* GZipInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45001603883900156830 /* GZipInputStream.m */; };
+		D2057BCD1C79ADB800D4AB44 /* GZipOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45021603883900156830 /* GZipOutputStream.m */; };
+		D2057BCE1C79ADB800D4AB44 /* HashedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45041603883900156830 /* HashedInputStream.m */; };
+		D2057BCF1C79ADB800D4AB44 /* HashedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45061603883900156830 /* HashedOutputStream.m */; };
+		D2057BD01C79ADB800D4AB44 /* InputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45081603883900156830 /* InputStream.m */; };
+		D2057BD11C79ADB800D4AB44 /* LengthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE6D1AB2720D005CB6BD /* LengthCell.m */; };
+		D2057BD21C79ADB800D4AB44 /* OutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D450A1603883900156830 /* OutputStream.m */; };
+		D2057BD31C79ADB800D4AB44 /* MasterPasswordFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE811AB27283005CB6BD /* MasterPasswordFieldCell.m */; };
+		D2057BD41C79ADB800D4AB44 /* Sha256OutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D450C1603883900156830 /* Sha256OutputStream.m */; };
+		D2057BD51C79ADB800D4AB44 /* TitleFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE8B1AB27283005CB6BD /* TitleFieldCell.m */; };
+		D2057BD61C79ADB800D4AB44 /* Kdb3Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 685D9D941603F8EE00D739D3 /* Kdb3Utils.m */; };
+		D2057BD71C79ADB800D4AB44 /* UIActionSheetAutoDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = 6851FAFC186DD11D00A53B0E /* UIActionSheetAutoDismiss.m */; };
+		D2057BD81C79ADB800D4AB44 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE871AB27283005CB6BD /* TextFieldCell.m */; };
+		D2057BD91C79ADB800D4AB44 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68496E741AB34F8800370876 /* SettingsViewController.m */; };
+		D2057BDA1C79ADB800D4AB44 /* DDXMLDocument+MKPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 680C277516050C7A009403DE /* DDXMLDocument+MKPAdditions.m */; };
+		D2057BDB1C79ADB800D4AB44 /* ImageButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE7F1AB27283005CB6BD /* ImageButtonCell.m */; };
+		D2057BDC1C79ADB800D4AB44 /* UrlFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE8D1AB27283005CB6BD /* UrlFieldCell.m */; };
+		D2057BDD1C79ADB800D4AB44 /* EditItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E7AF5B162523F800DCB00A /* EditItemViewController.m */; };
+		D2057BDE1C79ADB800D4AB44 /* KeypadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE5D1AB271C6005CB6BD /* KeypadView.m */; };
+		D2057BDF1C79ADB800D4AB44 /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE891AB27283005CB6BD /* TextViewCell.m */; };
+		D2057BE01C79ADB800D4AB44 /* StringFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684846B5167E1E460040C4EE /* StringFieldViewController.m */; };
+		D2057BE21C79ADB800D4AB44 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 526D9FAB167CDC010097213E /* libMBProgressHUD.a */; };
+		D2057BE31C79ADB800D4AB44 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689D000C13A42765005EBD36 /* AudioToolbox.framework */; };
+		D2057BE41C79ADB800D4AB44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689DFFDD13A4273F005EBD36 /* CoreGraphics.framework */; };
+		D2057BE51C79ADB800D4AB44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689DFFDB13A4273F005EBD36 /* Foundation.framework */; };
+		D2057BE61C79ADB800D4AB44 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6802C36E1A425D7300595AC9 /* LocalAuthentication.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D2057BE71C79ADB800D4AB44 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EBC2D51613394D00E8E799 /* QuartzCore.framework */; };
+		D2057BE81C79ADB800D4AB44 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689D000E13A42776005EBD36 /* Security.framework */; };
+		D2057BE91C79ADB800D4AB44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689DFFD913A4273F005EBD36 /* UIKit.framework */; };
+		D2057BEA1C79ADB800D4AB44 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 689D001013A4277E005EBD36 /* libxml2.dylib */; };
+		D2057BEB1C79ADB800D4AB44 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 689D001213A42784005EBD36 /* libz.dylib */; };
+		D2057BEE1C79ADB800D4AB44 /* Andale Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529708AD14FEEFD3003547FB /* Andale Mono.ttf */; };
+		D2057BEF1C79ADB800D4AB44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522D8F9D17E35B0E00BCA329 /* Images.xcassets */; };
+		D2057BF01C79ADB800D4AB44 /* dropbox.html in Resources */ = {isa = PBXBuildFile; fileRef = 689D021413A42B63005EBD36 /* dropbox.html */; };
+		D2057BF11C79ADB800D4AB44 /* itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 689D021513A42B63005EBD36 /* itunes.html */; };
+		D2057BF21C79ADB800D4AB44 /* createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 52A177BB13EB698E00CEEFCE /* createdb.html */; };
+		D2057BF31C79ADB800D4AB44 /* safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 68CE37F41404A86600E4A5E1 /* safariemail.html */; };
+		D2057BF41C79ADB800D4AB44 /* keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 68DDC3721405160300FC8BD8 /* keyfiles.html */; };
+		D2057BF51C79ADB800D4AB44 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 689D021613A42B63005EBD36 /* style.css */; };
+		D2057BF61C79ADB800D4AB44 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68E0830E146F24E3001C4EDF /* Localizable.strings */; };
+		D2057BF71C79ADB800D4AB44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68E08314146F2749001C4EDF /* InfoPlist.strings */; };
+		D2057BF81C79ADB800D4AB44 /* de-createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0714D8F3FB00F8CBC8 /* de-createdb.html */; };
+		D2057BF91C79ADB800D4AB44 /* de-dropbox.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0814D8F3FB00F8CBC8 /* de-dropbox.html */; };
+		D2057BFA1C79ADB800D4AB44 /* de-itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0914D8F3FB00F8CBC8 /* de-itunes.html */; };
+		D2057BFB1C79ADB800D4AB44 /* de-keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0A14D8F3FB00F8CBC8 /* de-keyfiles.html */; };
+		D2057BFC1C79ADB800D4AB44 /* de-safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0B14D8F3FB00F8CBC8 /* de-safariemail.html */; };
+		D2057BFD1C79ADB800D4AB44 /* ru-createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4715B59C880029F979 /* ru-createdb.html */; };
+		D2057BFE1C79ADB800D4AB44 /* ru-dropbox.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4815B59C880029F979 /* ru-dropbox.html */; };
+		D2057BFF1C79ADB800D4AB44 /* ru-itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4915B59C890029F979 /* ru-itunes.html */; };
+		D2057C001C79ADB800D4AB44 /* ru-keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4A15B59C890029F979 /* ru-keyfiles.html */; };
+		D2057C011C79ADB800D4AB44 /* ru-safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4B15B59C890029F979 /* ru-safariemail.html */; };
+		D2057C021C79ADB800D4AB44 /* fr-createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C168E16B3E871004195A1 /* fr-createdb.html */; };
+		D2057C031C79ADB800D4AB44 /* fr-dropbox.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C168F16B3E871004195A1 /* fr-dropbox.html */; };
+		D2057C041C79ADB800D4AB44 /* fr-itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C169016B3E871004195A1 /* fr-itunes.html */; };
+		D2057C051C79ADB800D4AB44 /* fr-keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C169116B3E871004195A1 /* fr-keyfiles.html */; };
+		D2057C061C79ADB800D4AB44 /* fr-safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C169216B3E871004195A1 /* fr-safariemail.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -379,6 +499,8 @@
 		BDB0FF5D194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text; name = nl; path = nl.lproj/AppStore.txt; sourceTree = "<group>"; };
 		BDB0FF5E194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BDB0FF5F194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D2057C0A1C79ADB800D4AB44 /* MiniKeePass Private.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniKeePass Private.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2057C0B1C79ADB800D4AB44 /* MiniKeePass copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MiniKeePass copy-Info.plist"; path = "/Users/tobi/projects/ios/MiniKeePass/MiniKeePass copy-Info.plist"; sourceTree = "<absolute>"; };
 		EFD785BA15B3D02600B9A276 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EFD785BB15B3D03F00B9A276 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -398,6 +520,23 @@
 				689DFFDA13A4273F005EBD36 /* UIKit.framework in Frameworks */,
 				689D001113A4277E005EBD36 /* libxml2.dylib in Frameworks */,
 				689D001313A42784005EBD36 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2057BE11C79ADB800D4AB44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2057BE21C79ADB800D4AB44 /* libMBProgressHUD.a in Frameworks */,
+				D2057BE31C79ADB800D4AB44 /* AudioToolbox.framework in Frameworks */,
+				D2057BE41C79ADB800D4AB44 /* CoreGraphics.framework in Frameworks */,
+				D2057BE51C79ADB800D4AB44 /* Foundation.framework in Frameworks */,
+				D2057BE61C79ADB800D4AB44 /* LocalAuthentication.framework in Frameworks */,
+				D2057BE71C79ADB800D4AB44 /* QuartzCore.framework in Frameworks */,
+				D2057BE81C79ADB800D4AB44 /* Security.framework in Frameworks */,
+				D2057BE91C79ADB800D4AB44 /* UIKit.framework in Frameworks */,
+				D2057BEA1C79ADB800D4AB44 /* libxml2.dylib in Frameworks */,
+				D2057BEB1C79ADB800D4AB44 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +765,7 @@
 				689D041413A42B85005EBD36 /* Resources */,
 				689DFFD613A4273F005EBD36 /* Products */,
 				526D9FA3167CDC010097213E /* MBProgressHUD.xcodeproj */,
+				D2057C0B1C79ADB800D4AB44 /* MiniKeePass copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -633,6 +773,7 @@
 			isa = PBXGroup;
 			children = (
 				689DFFD513A4273F005EBD36 /* MiniKeePass.app */,
+				D2057C0A1C79ADB800D4AB44 /* MiniKeePass Private.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -816,6 +957,24 @@
 			productReference = 689DFFD513A4273F005EBD36 /* MiniKeePass.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D2057B8A1C79ADB800D4AB44 /* MiniKeePass Private */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2057C071C79ADB800D4AB44 /* Build configuration list for PBXNativeTarget "MiniKeePass Private" */;
+			buildPhases = (
+				D2057B8B1C79ADB800D4AB44 /* Sources */,
+				D2057BE11C79ADB800D4AB44 /* Frameworks */,
+				D2057BEC1C79ADB800D4AB44 /* Increment Build Number */,
+				D2057BED1C79ADB800D4AB44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MiniKeePass Private";
+			productName = MiniKeePass;
+			productReference = D2057C0A1C79ADB800D4AB44 /* MiniKeePass Private.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -826,7 +985,7 @@
 				ORGANIZATIONNAME = Self;
 				TargetAttributes = {
 					689DFFD413A4273F005EBD36 = {
-						DevelopmentTeam = G9ZT7943FZ;
+						DevelopmentTeam = JD25SHA7WV;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 0;
@@ -863,6 +1022,7 @@
 			projectRoot = "";
 			targets = (
 				689DFFD413A4273F005EBD36 /* MiniKeePass */,
+				D2057B8A1C79ADB800D4AB44 /* MiniKeePass Private */,
 			);
 		};
 /* End PBXProject section */
@@ -910,10 +1070,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2057BED1C79ADB800D4AB44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2057BEE1C79ADB800D4AB44 /* Andale Mono.ttf in Resources */,
+				D2057BEF1C79ADB800D4AB44 /* Images.xcassets in Resources */,
+				D2057BF01C79ADB800D4AB44 /* dropbox.html in Resources */,
+				D2057BF11C79ADB800D4AB44 /* itunes.html in Resources */,
+				D2057BF21C79ADB800D4AB44 /* createdb.html in Resources */,
+				D2057BF31C79ADB800D4AB44 /* safariemail.html in Resources */,
+				D2057BF41C79ADB800D4AB44 /* keyfiles.html in Resources */,
+				D2057BF51C79ADB800D4AB44 /* style.css in Resources */,
+				D2057BF61C79ADB800D4AB44 /* Localizable.strings in Resources */,
+				D2057BF71C79ADB800D4AB44 /* InfoPlist.strings in Resources */,
+				D2057BF81C79ADB800D4AB44 /* de-createdb.html in Resources */,
+				D2057BF91C79ADB800D4AB44 /* de-dropbox.html in Resources */,
+				D2057BFA1C79ADB800D4AB44 /* de-itunes.html in Resources */,
+				D2057BFB1C79ADB800D4AB44 /* de-keyfiles.html in Resources */,
+				D2057BFC1C79ADB800D4AB44 /* de-safariemail.html in Resources */,
+				D2057BFD1C79ADB800D4AB44 /* ru-createdb.html in Resources */,
+				D2057BFE1C79ADB800D4AB44 /* ru-dropbox.html in Resources */,
+				D2057BFF1C79ADB800D4AB44 /* ru-itunes.html in Resources */,
+				D2057C001C79ADB800D4AB44 /* ru-keyfiles.html in Resources */,
+				D2057C011C79ADB800D4AB44 /* ru-safariemail.html in Resources */,
+				D2057C021C79ADB800D4AB44 /* fr-createdb.html in Resources */,
+				D2057C031C79ADB800D4AB44 /* fr-dropbox.html in Resources */,
+				D2057C041C79ADB800D4AB44 /* fr-itunes.html in Resources */,
+				D2057C051C79ADB800D4AB44 /* fr-keyfiles.html in Resources */,
+				D2057C061C79ADB800D4AB44 /* fr-safariemail.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		68C17C9C1A3E1774008DD56B /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		D2057BEC1C79ADB800D4AB44 /* Increment Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
@@ -1022,6 +1228,98 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2057B8B1C79ADB800D4AB44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2057B8C1C79ADB800D4AB44 /* main.m in Sources */,
+				D2057B8D1C79ADB800D4AB44 /* Base64.m in Sources */,
+				D2057B8E1C79ADB800D4AB44 /* KeychainUtils.m in Sources */,
+				D2057B8F1C79ADB800D4AB44 /* PinViewController.m in Sources */,
+				D2057B901C79ADB800D4AB44 /* GroupSearchController.m in Sources */,
+				D2057B911C79ADB800D4AB44 /* PasswordFieldCell.m in Sources */,
+				D2057B921C79ADB800D4AB44 /* Kdb.m in Sources */,
+				D2057B931C79ADB800D4AB44 /* LockScreenManager.m in Sources */,
+				D2057B941C79ADB800D4AB44 /* CharacterSetsViewController.m in Sources */,
+				D2057B951C79ADB800D4AB44 /* Kdb3Date.m in Sources */,
+				D2057B961C79ADB800D4AB44 /* Kdb3Node.m in Sources */,
+				D2057B971C79ADB800D4AB44 /* Kdb3Reader.m in Sources */,
+				D2057B981C79ADB800D4AB44 /* Kdb3Writer.m in Sources */,
+				D2057B991C79ADB800D4AB44 /* PasswordGeneratorViewController.m in Sources */,
+				D2057B9A1C79ADB800D4AB44 /* ChoiceCell.m in Sources */,
+				D2057B9B1C79ADB800D4AB44 /* SwitchCell.m in Sources */,
+				D2057B9C1C79ADB800D4AB44 /* Kdb4Node.m in Sources */,
+				D2057B9D1C79ADB800D4AB44 /* Kdb4Parser.m in Sources */,
+				D2057B9E1C79ADB800D4AB44 /* Kdb4Persist.m in Sources */,
+				D2057B9F1C79ADB800D4AB44 /* Kdb4Reader.m in Sources */,
+				D2057BA01C79ADB800D4AB44 /* Kdb4Writer.m in Sources */,
+				D2057BA11C79ADB800D4AB44 /* KdbPassword.m in Sources */,
+				D2057BA21C79ADB800D4AB44 /* KdbReaderFactory.m in Sources */,
+				D2057BA31C79ADB800D4AB44 /* ImageFactory.m in Sources */,
+				D2057BA41C79ADB800D4AB44 /* SelectGroupViewController.m in Sources */,
+				D2057BA51C79ADB800D4AB44 /* LockViewController.m in Sources */,
+				D2057BA61C79ADB800D4AB44 /* AppSettings.m in Sources */,
+				D2057BA71C79ADB800D4AB44 /* KdbWriterFactory.m in Sources */,
+				D2057BA81C79ADB800D4AB44 /* Salsa20RandomStream.m in Sources */,
+				D2057BA91C79ADB800D4AB44 /* Utils.m in Sources */,
+				D2057BAA1C79ADB800D4AB44 /* UUID.m in Sources */,
+				D2057BAB1C79ADB800D4AB44 /* DDXMLElementAdditions.m in Sources */,
+				D2057BAC1C79ADB800D4AB44 /* NSString+DDXML.m in Sources */,
+				D2057BAD1C79ADB800D4AB44 /* UIAlertViewAutoDismiss.m in Sources */,
+				D2057BAE1C79ADB800D4AB44 /* DDXMLDocument.m in Sources */,
+				D2057BAF1C79ADB800D4AB44 /* DDXMLElement.m in Sources */,
+				D2057BB01C79ADB800D4AB44 /* DDXMLNode.m in Sources */,
+				D2057BB11C79ADB800D4AB44 /* DatabaseDocument.m in Sources */,
+				D2057BB21C79ADB800D4AB44 /* DatabaseManager.m in Sources */,
+				D2057BB31C79ADB800D4AB44 /* EntryViewController.m in Sources */,
+				D2057BB41C79ADB800D4AB44 /* FilesInfoView.m in Sources */,
+				D2057BB51C79ADB800D4AB44 /* FilesViewController.m in Sources */,
+				D2057BB61C79ADB800D4AB44 /* GroupViewController.m in Sources */,
+				D2057BB71C79ADB800D4AB44 /* MiniKeePassAppDelegate.m in Sources */,
+				D2057BB81C79ADB800D4AB44 /* NewKdbViewController.m in Sources */,
+				D2057BB91C79ADB800D4AB44 /* SelectionListViewController.m in Sources */,
+				D2057BBA1C79ADB800D4AB44 /* TextEntryController.m in Sources */,
+				D2057BBB1C79ADB800D4AB44 /* PasswordUtils.m in Sources */,
+				D2057BBC1C79ADB800D4AB44 /* InfoBar.m in Sources */,
+				D2057BBD1C79ADB800D4AB44 /* FormViewController.m in Sources */,
+				D2057BBE1C79ADB800D4AB44 /* ImageSelectionViewController.m in Sources */,
+				D2057BBF1C79ADB800D4AB44 /* KeypadButton.m in Sources */,
+				D2057BC01C79ADB800D4AB44 /* WebViewController.m in Sources */,
+				D2057BC11C79ADB800D4AB44 /* PasswordViewController.m in Sources */,
+				D2057BC21C79ADB800D4AB44 /* RandomStream.m in Sources */,
+				D2057BC31C79ADB800D4AB44 /* HelpViewController.m in Sources */,
+				D2057BC41C79ADB800D4AB44 /* ImageSelectionView.m in Sources */,
+				D2057BC51C79ADB800D4AB44 /* AesInputStream.m in Sources */,
+				D2057BC61C79ADB800D4AB44 /* AesOutputStream.m in Sources */,
+				D2057BC71C79ADB800D4AB44 /* Arc4RandomStream.m in Sources */,
+				D2057BC81C79ADB800D4AB44 /* DataInputStream.m in Sources */,
+				D2057BC91C79ADB800D4AB44 /* DataOutputStream.m in Sources */,
+				D2057BCA1C79ADB800D4AB44 /* FileInputStream.m in Sources */,
+				D2057BCB1C79ADB800D4AB44 /* FileOutputStream.m in Sources */,
+				D2057BCC1C79ADB800D4AB44 /* GZipInputStream.m in Sources */,
+				D2057BCD1C79ADB800D4AB44 /* GZipOutputStream.m in Sources */,
+				D2057BCE1C79ADB800D4AB44 /* HashedInputStream.m in Sources */,
+				D2057BCF1C79ADB800D4AB44 /* HashedOutputStream.m in Sources */,
+				D2057BD01C79ADB800D4AB44 /* InputStream.m in Sources */,
+				D2057BD11C79ADB800D4AB44 /* LengthCell.m in Sources */,
+				D2057BD21C79ADB800D4AB44 /* OutputStream.m in Sources */,
+				D2057BD31C79ADB800D4AB44 /* MasterPasswordFieldCell.m in Sources */,
+				D2057BD41C79ADB800D4AB44 /* Sha256OutputStream.m in Sources */,
+				D2057BD51C79ADB800D4AB44 /* TitleFieldCell.m in Sources */,
+				D2057BD61C79ADB800D4AB44 /* Kdb3Utils.m in Sources */,
+				D2057BD71C79ADB800D4AB44 /* UIActionSheetAutoDismiss.m in Sources */,
+				D2057BD81C79ADB800D4AB44 /* TextFieldCell.m in Sources */,
+				D2057BD91C79ADB800D4AB44 /* SettingsViewController.m in Sources */,
+				D2057BDA1C79ADB800D4AB44 /* DDXMLDocument+MKPAdditions.m in Sources */,
+				D2057BDB1C79ADB800D4AB44 /* ImageButtonCell.m in Sources */,
+				D2057BDC1C79ADB800D4AB44 /* UrlFieldCell.m in Sources */,
+				D2057BDD1C79ADB800D4AB44 /* EditItemViewController.m in Sources */,
+				D2057BDE1C79ADB800D4AB44 /* KeypadView.m in Sources */,
+				D2057BDF1C79ADB800D4AB44 /* TextViewCell.m in Sources */,
+				D2057BE01C79ADB800D4AB44 /* StringFieldViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -1114,7 +1412,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1151,7 +1449,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "4758DC3A-B5A3-47FC-BA60-308A27C51D17";
 				SDKROOT = iphoneos;
@@ -1168,7 +1466,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "MiniKeePass/MiniKeePass-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baumhoto.MiniKeePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1180,12 +1479,46 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "MiniKeePass/MiniKeePass-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baumhoto.MiniKeePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b2580c41-a4ac-4e4b-aa58-5bd5565ef607";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2057C081C79ADB800D4AB44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "MiniKeePass copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baumhoto.MiniKeePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2057C091C79ADB800D4AB44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "MiniKeePass copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baumhoto.MiniKeePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1207,6 +1540,15 @@
 			buildConfigurations = (
 				689D000413A42740005EBD36 /* Debug */,
 				689D000513A42740005EBD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2057C071C79ADB800D4AB44 /* Build configuration list for PBXNativeTarget "MiniKeePass Private" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2057C081C79ADB800D4AB44 /* Debug */,
+				D2057C091C79ADB800D4AB44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
